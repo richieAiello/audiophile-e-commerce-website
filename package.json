@@ -1,0 +1,23 @@
+{
+  "name": "audiophile-e-commerce-website",
+  "version": "1.0.0",
+  "description": "![Design preview for the Audiophile e-commerce website coding challenge](./preview.jpg)",
+  "source": "./src/index.html",
+  "scripts": {
+    "dev": "parcel",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Richard Aiello",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.6.2",
+    "clsx": "^1.1.1",
+    "parcel": "^2.6.2",
+    "process": "^0.11.10",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.3.0",
+    "sass": "^1.53.0"
+  }
+}
