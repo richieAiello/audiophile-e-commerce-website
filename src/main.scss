@@ -47,6 +47,10 @@ $light-peach: #FBAF85;
 }
 
 /******************************
+  NAV
+******************************/
+
+/******************************
   FOOTER
 ******************************/
 .footer {
@@ -60,6 +64,16 @@ $light-peach: #FBAF85;
     justify-items: center;
     row-gap: 3rem;
     position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      height: 4px;
+      width: 101px;
+      background-color: $peach;
+      position: absolute;
+      top: -52px;
+    }
   }
 
   &__list {
