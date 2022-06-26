@@ -52,22 +52,18 @@ $light-peach: #FBAF85;
 .footer {
   background-color: $black-grey;
   padding: 3.25rem 0 2.375rem;
-  text-align: center;
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    color: rgba($white, 50%);
+    text-align: center;
+    display: grid;
+    justify-items: center;
+    row-gap: 3rem;
     position: relative;
-  }
-
-  .logo {
-    margin-bottom: 3rem;
   }
 
   &__list {
     list-style: none;
-    margin-bottom: 3rem;
   }
 
   &__item {
@@ -89,6 +85,11 @@ $light-peach: #FBAF85;
     &:focus {
       color: $peach;
     }
+  }
+
+  &__text {
+    max-width: 327px;
+    margin-inline: auto;
   }
 
   &__icon {
