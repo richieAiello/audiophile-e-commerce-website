@@ -5,3 +5,4 @@ dist/
 *.xd
 .DS_Store
 .prettierignore
+notes.md
