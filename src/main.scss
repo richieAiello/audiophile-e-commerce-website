@@ -19,6 +19,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    margin-bottom: 3rem;
   }
 
   &__icon {
