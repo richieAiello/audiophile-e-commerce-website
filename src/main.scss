@@ -1,3 +1,17 @@
+/******************************
+  VARIABLES
+******************************/
+$white: #FFFFFF;
+$black: #000000;
+$black-grey: #101010;
+$grey: #F1F1F1;
+$light-grey: #FAFAFA;
+$peach: #D87D4A;
+$light-peach: #FBAF85;
+
+/******************************
+  RESET AND SCROLLBAR
+******************************/
 *,
 *::before,
 *::after {
@@ -6,14 +20,39 @@
   margin: 0;
 }
 
+/******************************
+  BASE STYLES
+******************************/
+.body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  line-height: 1.5625rem;
+}
+
 .container {
   width: min(100% - 3rem, 689px);
   margin-inline: auto;
 }
 
+.link {
+  text-decoration: none;
+  color: inherit;
+  transition: all 400ms;
+}
+
+.active {
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/******************************
+  FOOTER
+******************************/
 .footer {
-  background-color: #101010;
+  background-color: $black-grey;
   padding: 3.25rem 0 2.375rem;
+  text-align: center;
 
   &__wrapper {
     display: flex;
@@ -24,6 +63,32 @@
 
   .logo {
     margin-bottom: 3rem;
+  }
+
+  &__list {
+    list-style: none;
+    margin-bottom: 3rem;
+  }
+
+  &__item {
+    margin-bottom: 1rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__link {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    letter-spacing: 2px;
+    color: $white;
+
+    &:hover,
+    &:focus {
+      color: $peach;
+    }
   }
 
   &__icon {
@@ -40,7 +105,7 @@
       cursor: pointer;
 
       path {
-        fill: #D87D4A;
+        fill: $peach;
       }
     }
 

@@ -8,9 +8,29 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer__wrapper container">
-        <NavLink to="/" className="logo" aria-label="Return to top of home page.">
-          <Logo />
-        </NavLink>
+        <Logo className="logo" />
+        <ul className="footer__list">
+          <li className="footer__item">
+            <NavLink to="/" className="footer__link link">
+              Home
+            </NavLink>
+          </li>
+          <li className="footer__item">
+            <NavLink to="/headphones" className="footer__link link">
+              Headphones
+            </NavLink>
+          </li>
+          <li className="footer__item">
+            <NavLink to="/speakers" className="footer__link link">
+              Speakers
+            </NavLink>
+          </li>
+          <li className="footer__item">
+            <NavLink to="/earphones" className="footer__link link">
+              Earphones
+            </NavLink>
+          </li>
+        </ul>
         <div class="footer__wrapper--icons">
           <a href="#" className="footer__icon" aria-label="Visit audiophile's facebook.">
             <Facebook />
